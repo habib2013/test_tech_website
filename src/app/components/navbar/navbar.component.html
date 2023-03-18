@@ -1,0 +1,73 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2">
+   
+    <div class="container">
+      <a class="navbar-brand mr-lg-5 invMarginLeft30" href="./index.html">
+        <img src="./assets/img/Samsky_Technologies.svg" class="img-fluid" style="min-height: 60px;min-width:60px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar_global">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="./assets/img/Samsky_Technologies.svg" style="min-height: 100px;min-width:200px">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav navbar-nav-hover navbar-nav ml-auto invMarginRight30">
+          <li class="nav-item dropdown">
+            <a [routerLink]="['/']" class="nav-link" href="">
+              <i class="ni ni-ui-04 d-lg-none"></i>
+              <span class="nav-link-inner--text text-dark">Home</span>
+            </a>
+          
+          </li>
+
+        
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-toggle="dropdown" id="dropdownMenuButton">
+              <i class="ni ni-collection d-lg-none"></i>
+              <span class="nav-link-inner--text text-dark">Services</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" [routerLink]="['/cloud-computing']">Cloud Computing</a>
+              <a class="dropdown-item" [routerLink]="['/network-security']">Network Security</a>
+              <a class="dropdown-item" [routerLink]="['/it-consultancy']">IT Consultancy</a>
+              <a class="dropdown-item" [routerLink]="['/website-maintenance']">Website Support and maintenance</a>
+              <a class="dropdown-item" [routerLink]="['/digital-marketing']">Digital Marketing</a>
+              <a class="dropdown-item" [routerLink]="['/hosting-domain']">Web Hosting</a>
+            </div>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a [routerLink]="['/about-us']" class="nav-link" data-toggle="dropdown" href="#" role="button">
+              <i class="ni ni-collection d-lg-none"></i>
+              <span class="nav-link-inner--text text-dark">About</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a [routerLink]="['/contact-us']" class="nav-link" data-toggle="dropdown" href="#" role="button">
+              <i class="ni ni-collection d-lg-none"></i>
+              <span class="nav-link-inner--text text-dark">Contact</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>

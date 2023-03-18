@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'samskytechwebsite'`, () => {
+  it(`should have as title 'NewcorporateWebsite'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('samskytechwebsite');
+    expect(app.title).toEqual('NewcorporateWebsite');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('samskytechwebsite app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('NewcorporateWebsite app is running!');
   });
 });
